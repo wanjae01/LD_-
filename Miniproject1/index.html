@@ -3,139 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LookBook</title>
+    <title>LookBook - Today's Hot Fashion Worldwide</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
         }
         .navbar {
             background-color: #fff;
             padding: 1rem;
-            text-align: center;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
         .navbar-brand {
             font-size: 2.5rem;
-            font-weight: bold;
+            font-weight: 600;
             color: #333;
         }
         .navbar-text {
             font-size: 1.2rem;
             color: #666;
-            margin-top: 0.5rem;
+            font-weight: 300;
         }
-        .jumbotron {
-            background: linear-gradient(to right, #6a11cb, #2575fc);
-            color: #fff;
-            padding: 5rem 2rem;
+        .hero-section {
+            background-image: url('https://mma.prnewswire.com/media/2490933/Wisdom_eBay_Pre_Loved_Fashion_Week_Endless_Runway_1.jpg?w=400');
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .hero-content {
             text-align: center;
+            color: #fff;
+            z-index: 1;
+            padding: 2rem;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
         }
-        .jumbotron h1 {
-            font-size: 3rem;
-            font-weight: bold;
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .hero-section p {
+            font-size: 1.5rem;
+            font-weight: 300;
         }
         .country-section {
+            padding: 4rem 0;
+            background-color: #fff;
+        }
+        .country-block {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .country-flag {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .country-flag:hover {
+            transform: scale(1.05);
+        }
+        .country-block h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #333;
+        }
+        .company-intro {
+            background-color: #f1f3f5;
             padding: 3rem 0;
             text-align: center;
         }
-        .country-section .row {
-            margin-bottom: 2rem;
-        }
-        .country-block {
-            padding: 1rem;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s ease-in-out;
-        }
-        .country-block:hover {
-            transform: scale(1.05);
-        }
-        .country-block img {
-            width: 100px;
-            height: 60px;
-            margin-bottom: 1rem;
-        }
-        .country-block h3 {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-top: 1rem;
-        }
-        .company-intro {
-            background-color: #f8f9fa;
-            padding: 2rem 0;
-            text-align: center;
-        }
         .company-intro p {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             margin: 0;
             color: #333;
+            font-weight: 300;
+            max-width: 800px;
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-light">
-        <a class="navbar-brand" href="#">LookBook</a>
-        <span class="navbar-text">Following the sensibilities of fashion leaders</span>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">LookBook</a>
+            <span class="navbar-text ml-auto">Following the sensibilities of fashion leaders</span>
+        </div>
     </nav>
 
-    <!-- Jumbotron -->
-    <div class="jumbotron">
-        <h1>Explore Global Fashion Trends</h1>
-        <p>Discover the unique fashion styles of top influencers from Korea, the US, Italy, France, the UK, and Japan.</p>
-    </div>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Today's Hot Fashion Worldwide</h1>
+            <p>Discover and shop the unique styles of top influencers from around the globe</p>
+        </div>
+    </section>
 
     <!-- Countries Section -->
-    <div class="container country-section">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="country-block">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg" alt="Korea Flag">
-                    <h3>Korea</h3>
+    <section class="country-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="country-block">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg" alt="Korea Flag" class="country-flag">
+                        <h3>Korea</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="country-block">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="US Flag" class="country-flag">
+                        <h3>United States</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="country-block">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg" alt="Italy Flag" class="country-flag">
+                        <h3>Italy</h3>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="country-block">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="US Flag">
-                    <h3>United States</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="country-block">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg" alt="France Flag" class="country-flag">
+                        <h3>France</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="country-block">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg" alt="Italy Flag">
-                    <h3>Italy</h3>
+                <div class="col-md-4">
+                    <div class="country-block">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="UK Flag" class="country-flag">
+                        <h3>United Kingdom</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="country-block">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg" alt="Japan Flag" class="country-flag">
+                        <h3>Japan</h3>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="country-block">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg" alt="France Flag">
-                    <h3>France</h3>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="country-block">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="UK Flag">
-                    <h3>United Kingdom</h3>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="country-block">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg" alt="Japan Flag">
-                    <h3>Japan</h3>
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
 
     <!-- Company Introduction Section -->
-    <div class="company-intro">
-        <p>Check out the fashion of major fashion leaders around the world and experience purchasing at once.</p>
-    </div>
+    <section class="company-intro">
+        <div class="container">
+            <p>Experience the latest fashion trends from celebrities and influencers worldwide. Shop their looks instantly and elevate your style.</p>
+        </div>
+    </section>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
